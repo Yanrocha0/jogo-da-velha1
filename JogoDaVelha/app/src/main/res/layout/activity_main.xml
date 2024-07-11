@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:background="@drawable/torcida">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Jogo dos Milhões"
+        android:textColor="#0ff"
+        android:textSize="50sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/buttonJogarContraAmigo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jogar Contra Amigo"
+            android:textSize="18sp"
+            android:layout_margin="10dp" />
+        <Button
+            android:id="@+id/buttonJogarContraComputador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jogar Contra Computador"
+            android:textSize="18sp"
+            android:layout_margin="10dp" />
+    </LinearLayout>
+
+    <!-- Novos botões para selecionar nível de dificuldade -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/buttonFacil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fácil"
+            android:textSize="18sp"
+            android:layout_margin="10dp"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/buttonDificil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Difícil"
+            android:textSize="18sp"
+            android:layout_margin="10dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewEstado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#FF0000"
+        android:textSize="24sp"
+        android:layout_margin="10dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/linha1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <Button
+            android:textSize="20sp"
+            android:id="@+id/buttonZero"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:onClick="buttonClick" />
+        <Button
+            android:textSize="20sp"
+            android:id="@+id/buttonUm"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:onClick="buttonClick"/>
+        <Button
+            android:textSize="20sp"
+            android:id="@+id/buttonDois"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:onClick="buttonClick" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linha2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <Button
+            android:textSize="20sp"
+            android:id="@+id/buttonTres"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:onClick="buttonClick" />
+        <Button
+            android:textSize="20sp"
+            android:id="@+id/buttonQuatro"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:onClick="buttonClick" />
+        <Button
+            android:textSize="20sp"
+            android:id="@+id/buttonCinco"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:onClick="buttonClick" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linha3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <Button
+            android:textSize="20sp"
+            android:id="@+id/buttonSeis"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:onClick="buttonClick" />
+        <Button
+            android:textSize="20sp"
+            android:id="@+id/buttonSete"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:onClick="buttonClick" />
+        <Button
+            android:textSize="20sp"
+            android:id="@+id/buttonOito"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:onClick="buttonClick" />
+    </LinearLayout>
+</LinearLayout>
